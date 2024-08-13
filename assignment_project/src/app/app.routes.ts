@@ -6,10 +6,11 @@ import { LoginComponent } from '../admin/login/login.component';
 export const routes: Routes = [
     {
         path: 'login',
-        component:LoginComponent
+        component: LoginComponent
     },
     {
-path: 'logout',
-loadComponent: () =>import( '../admin/logout/logout.component').then(l=>l.LogoutComponent)
+        path: 'logout',
+        loadComponent: () => import('../admin/logout/logout.component').then(l => l.LogoutComponent)
     },
+
 ];
