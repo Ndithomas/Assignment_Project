@@ -16,6 +16,7 @@ import { ProfileComponent } from './profile/profile.component';
   imports: [
     CommonModule,
     AdminRoutingModule
-  ]
+  ],
+ 
 })
 export class AdminModule { }
