@@ -6,6 +6,8 @@ import { WithdrawalComponent } from '../withdrawal/withdrawal.component';
 import { BuyersSellersComponent } from '../buyers-sellers/buyers-sellers.component';
 import { SocialComponent } from '../social/social.component';
 import { GetStartedComponent } from '../get-started/get-started.component';
+import { FooterComponent } from '../app/footer/footer.component';
+
 
 @Component({
   selector: 'app-home',
@@ -16,7 +18,10 @@ import { GetStartedComponent } from '../get-started/get-started.component';
     WithdrawalComponent,
     BuyersSellersComponent,
   SocialComponent,
-  GetStartedComponent
+  GetStartedComponent,
+  FooterComponent
+  
+  
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
