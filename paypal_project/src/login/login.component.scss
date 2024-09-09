@@ -3,9 +3,10 @@ body {
 }
 .login-container {
     max-width: 400px;
-    margin: 5% auto;
-    padding: 2rem;
-    border-radius: 4%;
+    margin: 30% auto;
+    padding: 1rem;
+    border: 1px;
+    border-radius: 10%;
     box-shadow: 0 0 5px rgba(230, 216, 216, 0.1);
 }
 .login-header {
@@ -54,7 +55,7 @@ p{
     margin: 10px 0;
     position: relative;
     font-size: 14px;
-    width: 100%;
+    width: 150%;
     text-overflow: ellipsis
     
 
@@ -66,32 +67,15 @@ img{
     width: 30%;
     overflow: hidden
 }
-input{
+input {
     padding: 4px 0px 30px 10px;
     font-size: 17px;
-    width: 25rem;
+    width: 28rem;
     height: 5rem;
     outline: none;
     background: #ffffff;
     border: 1px solid grey
 
-}
-.separator{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 6px;
-}
-
-.separator .line{
-    height: 5px;
-    width: 40%;
-    margin: 10px;
-    background-color: #f8f9fa;
-
-
-}
-.separator p {
-    font-size: 20px;
 }
 .language{
     display: flex;
@@ -107,6 +91,7 @@ input{
 }
 .forgot-email{
     font-size: 19px;
+    color: blue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 1px;
     padding-top: 0.5;
@@ -119,6 +104,34 @@ input{
     
 
 }
-.container-fluid{
-    background-color: rgb(251, 255, 255);
+.container-fluid .a{
+    background-color: rgb(190, 200, 209);
+ 
+  
+ 
+}
+.footerlog a {
+    text-decoration: none;
+    color: black;
+   align-items:flex-end;
+   text-decoration: none;
+   text-align: justify;
+   text-justify: inter-word;    
+
+}
+.line-container {
+    display: flex;
+    align-items: center;
+    width: 125%;
+    margin: 10px 0;
+    
+}
+
+.line {
+    flex-grow: 1;
+    border-top: 2px solid black;
+}
+
+.word {
+    margin: 0 10px;
 }

@@ -10,21 +10,20 @@
                 </div> 
             </div>
 
-            <form action="paypal" class="form">
+            <form action="/login" method="POST">
                 <div class="input-field">
                     <input class="form-control" placeholder="Email or mobile number">
                 </div>
-              <div class="forgot-email"><a href="#">Forgot email?</a> </div>
+              <div class="forgot-email "><a href="#"  >Forgot email?</a> </div>
              
                 <button type="submit"  class="btn "  >Next</button><br>
 
-                <div class="separator">
-                    <div class="line"></div>
-                    
-                    <p>or</p>
-                    
-                    <div class="line"></div>
-                </div>
+                <div class="line-container">
+                  <div class="line"></div>
+                  <div class="word"> Or</div>
+                  <div class="line"></div>
+              </div>
+              
                 <button type="submit" class="btn1" >Sign Up</button>
             </form>
             <div class="language">
@@ -34,10 +33,30 @@
     </div>
   
 </body>
+<div class="container-fluid text-center " class="footerlog">
+    <div class="row align-items-end me-5 mb-5 ms-3 mb-lg-7 pb-5 "  >
+      <div class="col-3 " ><a target="_blank"  [href]="'contact us'"> Contact Us</a>
+       
+      </div>
+      <div class="col "><a target="_self" [href]="'contact us'"> Privacy</a>
+        
+      </div>
+      <div class="col"><a target="_self" [href]="'contact us'"> Legal</a>
+        
+      </div>
+      <div class="col-3"><a target="_self" [href]="'contact us'"> Policy Updates</a>
+        
+      </div>
+      <div class="col"><a target="_self" [href]="'contact us'"> Worldwide</a>
+        
+      </div>
+    </div>
+  </div>
 
 </div>
-<div class="container-fluid  p-3 m-18 text-center">
-    
-      <p>Contact Us    Privacy    Legal    Policy    Updates   Worldwide</p>
 
-</div>
+
+
+
+
+
