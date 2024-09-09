@@ -1,0 +1,28 @@
+.navbar-custom {
+    height: 75px;
+  
+  }
+  
+  .navbar-nav a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+  box-shadow: whitesmoke 1px;
+  }
+ 
+ .btn-paypal {
+  background-color: #0070ba;
+  color: white;
+  border-radius: 50px;
+  font-weight: bold;
+  width: 370px;
+ 
+ }
+ .btn-paypal:hover {
+  background-color: #005c99;
+  color: white;
+  cursor: pointer;
+ }
+ 
+ input[type="radio"]{
+  transform: scale(1.5);
+}
