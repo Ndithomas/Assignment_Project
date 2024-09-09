@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg  navbar-custom shadow p-3 mb-5 bg-white">
+    <div class="container   " style="width: 77%;">
+  
+      <a class="navbar-brand" href="/home">
+        <img src="pp-logo-150px.png" alt="">
+      </a>
+      <form>
+        <a class="btn btn-outline-success me-2 rounded-5 bg-white border-primary text-primary" type="button"
+          href="/login">Log
+          in</a>
+      </form>
+    </div>
+  </nav>
+  
+  
+  <div class="container hstack gap-3 p-5 " >
+    <div class="container">
+      <img src="image_pseudo_social.jpg" alt="">
+      <h1 class=" fw-light fs-1">See for yourself why millions of people love PayPal.</h1>
+  
+    </div>
+  
+    <div class="vr" style="height: 370px;"></div>
+    <div class="container" >
+      <h4 class="fs-5 fw-lighter mb-3">Sign up for PayPal, it's free.</h4>
+      <h4 class="fs-6 fw-light mb-3">Choose from 2 types of accounts:</h4>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" [(ngModel)]="selectOption" name="accountType" [value]="'personal'"
+          (change)="selectAccountType('personal')">
+        <label class="form-check-label " for="personal">
+          <h4 class="fs-6">Personal Account</h4>
+          <p class="fw-light lh-base">Shop in your country and around the world from your computer or on your mobile - all without sharing your
+            financial info with the sellers.
+  
+          </p>
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input " type="radio" [(ngModel)]="selectOption" name="accountType" [value]="'business'"
+          (change)="selectAccountType('business')">
+        <label class="form-check-label" for="business">
+          <h4 class="fs-6">Business Account</h4>
+          <p class="fw-light text-break">Accept payments and send invoices to your customers.
+             It’s easier and more secure to sell to anyone, anywhere, and any time.
+          </p>
+        </label>
+        <div class="mb-3">
+          <button type="button" class="btn btn-primary   btn-paypal p-2" [disabled]="!selectOption"
+            (click)="continue()">continue</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+  <app-footer></app-footer>
