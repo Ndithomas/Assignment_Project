@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from '../home/home.component';
+import { PartnerComponent } from '../partner/partner.component';
 
 export const routes: Routes = [
     {
@@ -13,6 +14,11 @@ export const routes: Routes = [
     {
 
         path:'login',
-        loadComponent:()=>import ('./login/login.component').then(l =>l.LoginComponent)
+        loadComponent:()=>import ('../login/login.component').then(l =>l.LoginComponent)
+
+    },
+    {
+        path:'partner',
+        loadComponent:()=>import ('../partner/partner.component').then(partner=>partner.PartnerComponent)
     }
 ];
