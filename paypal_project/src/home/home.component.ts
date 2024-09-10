@@ -6,7 +6,11 @@ import { WithdrawalComponent } from '../withdrawal/withdrawal.component';
 import { BuyersSellersComponent } from '../buyers-sellers/buyers-sellers.component';
 import { SocialComponent } from '../social/social.component';
 import { GetStartedComponent } from '../get-started/get-started.component';
+
+import { LoginComponent } from '../login/login.component';
+
 import { FooterComponent } from '../app/footer/footer.component';
+
 
 
 @Component({
@@ -19,8 +23,12 @@ import { FooterComponent } from '../app/footer/footer.component';
     BuyersSellersComponent,
   SocialComponent,
   GetStartedComponent,
+
+  LoginComponent,
+
   FooterComponent
   
+
   
 ],
   templateUrl: './home.component.html',
